@@ -1,0 +1,956 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L The_Qi_wireless_charger_tx-rescue:+3.3V-OLIMEX_Power #PWR?
+U 1 1 619B63CA
+P 6775 1200
+AR Path="/619B63CA" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B63CA" Ref="#PWR0109"  Part="1" 
+AR Path="/61A1C19C/619B63CA" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B63CA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0109" H 6775 1050 50  0001 C CNN
+F 1 "+3.3V" H 6790 1373 50  0000 C CNN
+F 2 "" H 6775 1200 60  0000 C CNN
+F 3 "" H 6775 1200 60  0000 C CNN
+	1    6775 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 1200 6775 1275
+Text Notes 6775 1250 0    39   ~ 0
+bulk cap\n
+Wire Wire Line
+	6775 1275 6725 1275
+Wire Wire Line
+	6725 1275 6725 1350
+Wire Wire Line
+	6775 1275 6825 1275
+Wire Wire Line
+	6825 1275 6825 1350
+Connection ~ 6775 1275
+Wire Wire Line
+	7075 1275 7075 1350
+Text Label 7075 1275 0    39   ~ 0
+AVDD
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GNDREF-OLIMEX_Power #PWR?
+U 1 1 619B63D9
+P 7175 5225
+AR Path="/619B63D9" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B63D9" Ref="#PWR0110"  Part="1" 
+AR Path="/61A1C19C/619B63D9" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B63D9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 7175 4975 50  0001 C CNN
+F 1 "GNDREF" H 7180 5052 50  0000 C CNN
+F 2 "" H 7175 5225 60  0000 C CNN
+F 3 "" H 7175 5225 60  0000 C CNN
+	1    7175 5225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 5225 7175 5150
+Wire Wire Line
+	6825 5150 6725 5250
+NoConn ~ 6075 2350
+NoConn ~ 6075 2450
+NoConn ~ 6075 1950
+NoConn ~ 6075 2100
+NoConn ~ 6075 3500
+NoConn ~ 6075 3600
+NoConn ~ 6075 3700
+Text Notes 9850 850  0    39   ~ 0
+analog decoupling caps
+Text Notes 10000 1725 0    39   ~ 0
+this symbol will be used for\nanalog ground. the two grounds\nwill be joined with R=0 OHMs
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GNDREF-OLIMEX_Power #PWR?
+U 1 1 619B63ED
+P 9825 1475
+AR Path="/619B63ED" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B63ED" Ref="#PWR0111"  Part="1" 
+AR Path="/61A1C19C/619B63ED" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B63ED" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 9825 1225 50  0001 C CNN
+F 1 "GNDREF" H 9830 1302 50  0000 C CNN
+F 2 "" H 9825 1475 60  0000 C CNN
+F 3 "" H 9825 1475 60  0000 C CNN
+	1    9825 1475
+	1    0    0    -1  
+$EndComp
+Connection ~ 9425 1075
+Wire Wire Line
+	9425 1075 9425 1000
+Text Label 9425 1000 1    39   ~ 0
+AVDD
+Wire Wire Line
+	9825 1200 9825 1075
+Wire Wire Line
+	9825 1475 9825 1400
+Connection ~ 9825 1075
+Wire Wire Line
+	10325 1200 10325 1075
+Wire Wire Line
+	9425 1075 9425 1175
+Wire Wire Line
+	10325 1075 9825 1075
+Wire Wire Line
+	10325 1425 10325 1400
+Wire Wire Line
+	9425 1425 10325 1425
+Wire Wire Line
+	9425 1375 9425 1425
+Wire Wire Line
+	9825 875  9825 775 
+$Comp
+L The_Qi_wireless_charger_tx-rescue:+3.3V-OLIMEX_Power #PWR?
+U 1 1 619B6413
+P 9825 775
+AR Path="/619B6413" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B6413" Ref="#PWR0112"  Part="1" 
+AR Path="/61A1C19C/619B6413" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B6413" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 9825 625 50  0001 C CNN
+F 1 "+3.3V" H 9840 948 50  0000 C CNN
+F 2 "" H 9825 775 60  0000 C CNN
+F 3 "" H 9825 775 60  0000 C CNN
+	1    9825 775 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 619B641B
+P 9825 975
+AR Path="/619B641B" Ref="FB?"  Part="1" 
+AR Path="/6199674E/619B641B" Ref="FB1"  Part="1" 
+AR Path="/61A1C19C/619B641B" Ref="FB?"  Part="1" 
+AR Path="/61A1DC85/619B641B" Ref="FB?"  Part="1" 
+F 0 "FB1" H 9925 1021 50  0000 L CNN
+F 1 "MLB3216-600P4A(f)_1206" H 9925 930 50  0000 L CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" V 9755 975 50  0001 C CNN
+F 3 "~" H 9825 975 50  0001 C CNN
+F 4 "MLB3216-600P4A(f)" H 9825 975 50  0001 C CNN "MFR"
+F 5 "LCSC" H 9825 975 50  0001 C CNN "Vendor"
+	1    9825 975 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 1750 8125 1750
+Wire Wire Line
+	7875 1650 8125 1650
+NoConn ~ 7875 2200
+NoConn ~ 7875 2300
+Wire Wire Line
+	7875 1950 8125 1950
+Wire Wire Line
+	7875 2050 8125 2050
+Wire Wire Line
+	7875 2500 8125 2500
+Wire Wire Line
+	7875 2600 8125 2600
+Wire Wire Line
+	7875 2700 8125 2700
+Wire Wire Line
+	7875 2850 8575 2850
+Wire Wire Line
+	8575 2850 8575 2750
+Wire Wire Line
+	8575 2750 8875 2750
+Wire Wire Line
+	9425 2950 9425 2750
+Wire Wire Line
+	9425 2750 9175 2750
+Connection ~ 9425 2950
+Wire Wire Line
+	9425 2950 9550 2950
+Wire Wire Line
+	7875 3050 8100 3050
+Wire Wire Line
+	7875 3150 8100 3150
+Wire Wire Line
+	7875 3350 8100 3350
+Wire Wire Line
+	7875 3550 8100 3550
+Wire Wire Line
+	7875 3650 8100 3650
+NoConn ~ 7875 3800
+$Comp
+L Device:R_US R?
+U 1 1 619B644C
+P 8450 3900
+AR Path="/619B644C" Ref="R?"  Part="1" 
+AR Path="/6199674E/619B644C" Ref="R9"  Part="1" 
+AR Path="/61A1C19C/619B644C" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/619B644C" Ref="R?"  Part="1" 
+F 0 "R9" V 8400 4050 50  0000 C CNN
+F 1 "0Ohm" V 8400 3675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 3890 50  0001 C CNN
+F 3 "~" H 8450 3900 50  0001 C CNN
+F 4 "1206W4J0000T5E" V 8450 3900 50  0001 C CNN "MFR"
+F 5 "LCSC" V 8450 3900 50  0001 C CNN "Vendor"
+	1    8450 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7875 3900 8300 3900
+Wire Wire Line
+	8600 3900 8750 3900
+$Comp
+L Device:R_US R?
+U 1 1 619B6455
+P 9125 4300
+AR Path="/619B6455" Ref="R?"  Part="1" 
+AR Path="/6199674E/619B6455" Ref="R12"  Part="1" 
+AR Path="/61A1C19C/619B6455" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/619B6455" Ref="R?"  Part="1" 
+F 0 "R12" H 9250 4325 50  0000 C CNN
+F 1 "10K" H 9250 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9165 4290 50  0001 C CNN
+F 3 "~" H 9125 4300 50  0001 C CNN
+F 4 "0402WGF1002TCE" H 9125 4300 50  0001 C CNN "MFR"
+F 5 "LCSC" H 9125 4300 50  0001 C CNN "Vendor"
+	1    9125 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 4500 9125 4500
+Wire Wire Line
+	9125 4500 9125 4450
+Text Label 9125 4100 1    39   ~ 0
+AVDD
+Wire Wire Line
+	9125 4150 9125 4100
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 619B6465
+P 9125 4850
+AR Path="/619B6465" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B6465" Ref="#PWR0113"  Part="1" 
+AR Path="/61A1C19C/619B6465" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B6465" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 9125 4600 50  0001 C CNN
+F 1 "GND" H 9130 4677 50  0000 C CNN
+F 2 "" H 9125 4850 60  0000 C CNN
+F 3 "" H 9125 4850 60  0000 C CNN
+	1    9125 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 4850 9125 4750
+Wire Wire Line
+	9125 4550 9125 4500
+Connection ~ 9125 4500
+NoConn ~ 7875 4150
+NoConn ~ 7875 4250
+NoConn ~ 7875 4350
+Text Label 8150 4750 0    50   ~ 0
+LED_R
+Text Label 8150 4850 0    50   ~ 0
+LED_G
+Wire Wire Line
+	7875 4650 8150 4650
+Wire Wire Line
+	7875 4750 8150 4750
+Wire Wire Line
+	7875 4850 8150 4850
+$Comp
+L Device:LED D?
+U 1 1 619B647D
+P 1875 3525
+AR Path="/619B647D" Ref="D?"  Part="1" 
+AR Path="/6199674E/619B647D" Ref="D1"  Part="1" 
+AR Path="/61A1C19C/619B647D" Ref="D?"  Part="1" 
+AR Path="/61A1DC85/619B647D" Ref="D?"  Part="1" 
+F 0 "D1" V 1900 3750 50  0000 R CNN
+F 1 "LED_RED" V 1825 3975 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1875 3525 50  0001 C CNN
+F 3 "~" H 1875 3525 50  0001 C CNN
+F 4 "NCD1206R1" V 1875 3525 50  0001 C CNN "MFR"
+F 5 "LCSC" V 1875 3525 50  0001 C CNN "Vendor"
+	1    1875 3525
+	0    -1   -1   0   
+$EndComp
+Text Label 1875 2875 1    50   ~ 0
+LED_R
+Text Label 2325 2850 1    50   ~ 0
+LED_G
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 619B6485
+P 2100 3975
+AR Path="/619B6485" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B6485" Ref="#PWR0114"  Part="1" 
+AR Path="/61A1C19C/619B6485" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B6485" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0114" H 2100 3725 50  0001 C CNN
+F 1 "GND" H 2105 3802 50  0000 C CNN
+F 2 "" H 2100 3975 60  0000 C CNN
+F 3 "" H 2100 3975 60  0000 C CNN
+	1    2100 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 2875 1875 2975
+Wire Wire Line
+	1875 3975 2100 3975
+Wire Wire Line
+	2325 3975 2325 3675
+Wire Wire Line
+	1875 3675 1875 3975
+Wire Wire Line
+	2325 3375 2325 3275
+Connection ~ 2100 3975
+Wire Wire Line
+	2100 3975 2325 3975
+$Comp
+L Device:R_US R?
+U 1 1 619B6492
+P 1875 3125
+AR Path="/619B6492" Ref="R?"  Part="1" 
+AR Path="/6199674E/619B6492" Ref="R7"  Part="1" 
+AR Path="/61A1C19C/619B6492" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/619B6492" Ref="R?"  Part="1" 
+F 0 "R7" H 1775 3150 50  0000 C CNN
+F 1 "150" H 1975 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1915 3115 50  0001 C CNN
+F 3 "~" H 1875 3125 50  0001 C CNN
+F 4 "RTT022152FTH" H 1875 3125 50  0001 C CNN "MFR"
+F 5 "LCSC" H 1875 3125 50  0001 C CNN "Vendor"
+	1    1875 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 3275 1875 3375
+Wire Wire Line
+	2325 2975 2325 2850
+Wire Wire Line
+	7875 2950 8875 2950
+Wire Wire Line
+	9175 2950 9425 2950
+$Comp
+L Device:R_US R?
+U 1 1 619B64A2
+P 9025 2950
+AR Path="/619B64A2" Ref="R?"  Part="1" 
+AR Path="/6199674E/619B64A2" Ref="R11"  Part="1" 
+AR Path="/61A1C19C/619B64A2" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/619B64A2" Ref="R?"  Part="1" 
+F 0 "R11" V 8975 3125 50  0000 C CNN
+F 1 "100K" V 8975 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9065 2940 50  0001 C CNN
+F 3 "~" H 9025 2950 50  0001 C CNN
+F 4 "RC0402FR-07100KL" V 9025 2950 50  0001 C CNN "MFR"
+F 5 "LCSC" V 9025 2950 50  0001 C CNN "Vendor"
+	1    9025 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L GCL_Integrated-Circuits:TS80003 U?
+U 1 1 619B64A9
+P 6275 1550
+AR Path="/619B64A9" Ref="U?"  Part="1" 
+AR Path="/6199674E/619B64A9" Ref="U2"  Part="1" 
+AR Path="/61A1C19C/619B64A9" Ref="U?"  Part="1" 
+AR Path="/61A1DC85/619B64A9" Ref="U?"  Part="1" 
+F 0 "U2" H 6375 1675 50  0000 C CNN
+F 1 "TS80003" H 6425 1600 50  0000 C CNN
+F 2 "greencharge-footprints:QFN40P500X500X90-41N-D" H 6275 1550 50  0001 C CNN
+F 3 "" H 6275 1550 50  0001 C CNN
+F 4 "TS80003" H 6275 1550 50  0001 C CNN "MFR"
+	1    6275 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1350 5750 1250
+Text Notes 5625 925  0    39   ~ 0
+decoupling caps
+Text Notes 4875 950  0    39   ~ 0
+bulk cap\n
+Wire Wire Line
+	5550 925  5750 925 
+Wire Wire Line
+	5550 925  5350 925 
+Connection ~ 5550 925 
+Wire Wire Line
+	5550 1350 5750 1350
+Connection ~ 5550 1350
+Wire Wire Line
+	5350 1350 5550 1350
+Wire Wire Line
+	5750 1050 5750 925 
+Wire Wire Line
+	5350 1275 5350 1350
+Wire Wire Line
+	5350 925  5350 1075
+Wire Wire Line
+	4825 1225 4825 1275
+Wire Wire Line
+	4825 950  4825 1025
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 619B64C3
+P 4825 1275
+AR Path="/619B64C3" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B64C3" Ref="#PWR0115"  Part="1" 
+AR Path="/61A1C19C/619B64C3" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B64C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0115" H 4825 1025 50  0001 C CNN
+F 1 "GND" H 4830 1102 50  0000 C CNN
+F 2 "" H 4825 1275 60  0000 C CNN
+F 3 "" H 4825 1275 60  0000 C CNN
+	1    4825 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 619B64C9
+P 5550 1350
+AR Path="/619B64C9" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B64C9" Ref="#PWR0116"  Part="1" 
+AR Path="/61A1C19C/619B64C9" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B64C9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0116" H 5550 1100 50  0001 C CNN
+F 1 "GND" H 5555 1177 50  0000 C CNN
+F 2 "" H 5550 1350 60  0000 C CNN
+F 3 "" H 5550 1350 60  0000 C CNN
+	1    5550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:+3.3V-OLIMEX_Power #PWR?
+U 1 1 619B64CF
+P 5550 925
+AR Path="/619B64CF" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B64CF" Ref="#PWR0117"  Part="1" 
+AR Path="/61A1C19C/619B64CF" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B64CF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0117" H 5550 775 50  0001 C CNN
+F 1 "+3.3V" H 5565 1098 50  0000 C CNN
+F 2 "" H 5550 925 60  0000 C CNN
+F 3 "" H 5550 925 60  0000 C CNN
+	1    5550 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:+3.3V-OLIMEX_Power #PWR?
+U 1 1 619B64D5
+P 4825 950
+AR Path="/619B64D5" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B64D5" Ref="#PWR0118"  Part="1" 
+AR Path="/61A1C19C/619B64D5" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B64D5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0118" H 4825 800 50  0001 C CNN
+F 1 "+3.3V" H 4840 1123 50  0000 C CNN
+F 2 "" H 4825 950 60  0000 C CNN
+F 3 "" H 4825 950 60  0000 C CNN
+	1    4825 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619B64DB
+P 5350 1175
+AR Path="/619B64DB" Ref="C?"  Part="1" 
+AR Path="/6199674E/619B64DB" Ref="C9"  Part="1" 
+AR Path="/61A1C19C/619B64DB" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/619B64DB" Ref="C?"  Part="1" 
+F 0 "C9" H 5442 1221 50  0000 L CNN
+F 1 "100nF" H 5442 1130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5350 1175 50  0001 C CNN
+F 3 "~" H 5350 1175 50  0001 C CNN
+F 4 "CC0402KRX5R5BB104" H 5350 1175 50  0001 C CNN "MFR"
+F 5 "LCSC" H 5350 1175 50  0001 C CNN "Vendor"
+	1    5350 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619B64E1
+P 4825 1125
+AR Path="/619B64E1" Ref="C?"  Part="1" 
+AR Path="/6199674E/619B64E1" Ref="C8"  Part="1" 
+AR Path="/61A1C19C/619B64E1" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/619B64E1" Ref="C?"  Part="1" 
+F 0 "C8" H 4917 1171 50  0000 L CNN
+F 1 "4.7uF" H 4917 1080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4825 1125 50  0001 C CNN
+F 3 "~" H 4825 1125 50  0001 C CNN
+F 4 "CL10A475KQ8NNNC" H 4825 1125 50  0001 C CNN "MFR"
+F 5 "LCSC" H 4825 1125 50  0001 C CNN "Vendor"
+	1    4825 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 619B64EA
+P 6725 5250
+AR Path="/619B64EA" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/619B64EA" Ref="#PWR0119"  Part="1" 
+AR Path="/61A1C19C/619B64EA" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/619B64EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0119" H 6725 5000 50  0001 C CNN
+F 1 "GND" H 6730 5077 50  0000 C CNN
+F 2 "" H 6725 5250 60  0000 C CNN
+F 3 "" H 6725 5250 60  0000 C CNN
+	1    6725 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 1200 800  0    79   ~ 16
+TRANSMITTER CONTROLLER
+Text Notes 1700 2550 0    50   ~ 0
+LED INDICATORS
+$Comp
+L Device:LED D?
+U 1 1 619B6477
+P 2325 3525
+AR Path="/619B6477" Ref="D?"  Part="1" 
+AR Path="/6199674E/619B6477" Ref="D2"  Part="1" 
+AR Path="/61A1C19C/619B6477" Ref="D?"  Part="1" 
+AR Path="/61A1DC85/619B6477" Ref="D?"  Part="1" 
+F 0 "D2" V 2350 3350 50  0000 R CNN
+F 1 "LED_GREEN" V 2275 3400 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2325 3525 50  0001 C CNN
+F 3 "~" H 2325 3525 50  0001 C CNN
+F 4 "11-21/GPC-AM2P1/2T" V 2325 3525 50  0001 C CNN "MFR"
+F 5 "LCSC" V 2325 3525 50  0001 C CNN "Vendor"
+	1    2325 3525
+	0    -1   -1   0   
+$EndComp
+Text Notes 950  3975 0    39   ~ 0
+Indicates Errors\n(foreign object)\n
+Text Notes 2525 3900 0    39   ~ 0
+indicates Status\n(power on, Charging,\nCharging Complete)
+Text HLabel 8125 1650 2    50   Output ~ 0
+PWM1_H
+Text HLabel 8125 1750 2    50   Output ~ 0
+PWMI_L
+Text HLabel 8125 1950 2    50   Output ~ 0
+PWM2_H
+Text HLabel 8125 2050 2    50   Output ~ 0
+PWM2_L
+Text HLabel 8125 2500 2    50   Output ~ 0
+DRV_EN
+Text HLabel 8125 2600 2    50   Output ~ 0
+SYNC1
+Text HLabel 8125 2700 2    50   Output ~ 0
+SYNC2
+Text HLabel 8100 3050 2    50   Output ~ 0
+AC_PHASE
+Text HLabel 8100 3150 2    50   Output ~ 0
+AC_AMPL
+Text HLabel 8100 3350 2    50   Output ~ 0
+AC_V
+Text HLabel 8100 3550 2    50   Output ~ 0
+DC_CURRENT
+Text HLabel 8100 3650 2    50   Output ~ 0
+AC_PEAK
+Text Label 7900 3350 0    50   ~ 0
+AC_V
+Text Label 8750 3900 0    50   ~ 0
+AC_V
+Text Notes 2525 4225 0    39   ~ 0
+GREEN:\n-1/2 sec on-off- START UP\n-OFF - no receiver present(pinging)\n- Blinking- charging on going\n-Solid ON - Charging complete
+Text Notes 950  4200 0    39   ~ 0
+RED:\nBlinking-forign object detected\nSolid On- Error
+$Comp
+L power:+24V #PWR?
+U 1 1 61BF10BF
+P 1050 1350
+AR Path="/61BF10BF" Ref="#PWR?"  Part="1" 
+AR Path="/61B68DB5/61BF10BF" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/61BF10BF" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 1050 1200 50  0001 C CNN
+F 1 "+24V" H 1065 1523 50  0000 C CNN
+F 2 "" H 1050 1350 50  0001 C CNN
+F 3 "" H 1050 1350 50  0001 C CNN
+	1    1050 1350
+	1    0    0    -1  
+$EndComp
+Text Label 8100 3475 0    50   ~ 0
+DC_VOLTAGE
+Wire Wire Line
+	8100 3475 7925 3475
+Wire Wire Line
+	7925 3475 7925 3450
+Wire Wire Line
+	7925 3450 7875 3450
+Text Label 3200 1350 2    50   ~ 0
+DC_VOLTAGE
+Connection ~ 2525 1350
+Wire Wire Line
+	2525 1350 3200 1350
+Wire Wire Line
+	1675 1350 1850 1350
+$Comp
+L Device:R_US R?
+U 1 1 61BF10DB
+P 1525 1350
+AR Path="/61BF10DB" Ref="R?"  Part="1" 
+AR Path="/61B68DB5/61BF10DB" Ref="R?"  Part="1" 
+AR Path="/6199674E/61BF10DB" Ref="R5"  Part="1" 
+F 0 "R5" V 1425 1350 50  0000 C CNN
+F 1 "100K" V 1600 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1565 1340 50  0001 C CNN
+F 3 "~" H 1525 1350 50  0001 C CNN
+F 4 "RC0603FR-07100KL" V 1525 1350 50  0001 C CNN "MFR"
+F 5 "LCSC" V 1525 1350 50  0001 C CNN "Vendor"
+	1    1525 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2175 1975 1850 1975
+Connection ~ 2175 1975
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GNDREF-OLIMEX_Power #PWR?
+U 1 1 61BF10D3
+P 2175 1975
+AR Path="/61BF10D3" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/61BF10D3" Ref="#PWR0121"  Part="1" 
+AR Path="/61A1C19C/61BF10D3" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/61BF10D3" Ref="#PWR?"  Part="1" 
+AR Path="/61B68DB5/61BF10D3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0121" H 2175 1725 50  0001 C CNN
+F 1 "GNDREF" H 2180 1802 50  0000 C CNN
+F 2 "" H 2175 1975 60  0000 C CNN
+F 3 "" H 2175 1975 60  0000 C CNN
+	1    2175 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1350 2525 1350
+Connection ~ 1850 1350
+Wire Wire Line
+	2525 1875 2525 1975
+Wire Wire Line
+	1850 1550 1850 1350
+Wire Wire Line
+	1050 1350 1375 1350
+Wire Wire Line
+	1850 1975 1850 1850
+Wire Wire Line
+	2525 1975 2175 1975
+Wire Wire Line
+	2525 1350 2525 1575
+$Comp
+L Device:R_US R?
+U 1 1 61BF10B9
+P 1850 1700
+AR Path="/61BF10B9" Ref="R?"  Part="1" 
+AR Path="/61B68DB5/61BF10B9" Ref="R?"  Part="1" 
+AR Path="/6199674E/61BF10B9" Ref="R6"  Part="1" 
+F 0 "R6" H 1725 1675 50  0000 C CNN
+F 1 "11.5K" H 1700 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1890 1690 50  0001 C CNN
+F 3 "~" H 1850 1700 50  0001 C CNN
+F 4 "0603WAF1152T5E" H 1850 1700 50  0001 C CNN "MFR"
+F 5 "LCSC" H 1850 1700 50  0001 C CNN "Vendor"
+	1    1850 1700
+	-1   0    0    1   
+$EndComp
+Text Notes 1725 1100 2    50   ~ 0
+INPUT VOLTAGE SENSE\n
+Text GLabel 9175 1075 0    50   Input ~ 0
+AVDD
+Wire Wire Line
+	9175 1075 9425 1075
+Text HLabel 9550 2950 2    50   Output ~ 0
+AC_GAIN
+Wire Wire Line
+	9425 1075 9600 1075
+$Comp
+L The_Qi_wireless_charger_tx-rescue:PWR_FLAG-OLIMEX_Power #FLG01
+U 1 1 628A9B9D
+P 9600 1025
+F 0 "#FLG01" H 9600 1120 50  0001 C CNN
+F 1 "PWR_FLAG" H 9600 1248 50  0000 C CNN
+F 2 "" H 9600 1025 60  0000 C CNN
+F 3 "" H 9600 1025 60  0000 C CNN
+	1    9600 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1025 9600 1075
+Connection ~ 9600 1075
+Wire Wire Line
+	9600 1075 9825 1075
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GNDREF-OLIMEX_Power #PWR?
+U 1 1 62BCC6E2
+P 7275 6100
+AR Path="/62BCC6E2" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/62BCC6E2" Ref="#PWR010"  Part="1" 
+AR Path="/61A1C19C/62BCC6E2" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/62BCC6E2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR010" H 7275 5850 50  0001 C CNN
+F 1 "GNDREF" H 7280 5927 50  0000 C CNN
+F 2 "" H 7275 6100 60  0000 C CNN
+F 3 "" H 7275 6100 60  0000 C CNN
+	1    7275 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 62BCC6FA
+P 6775 6100
+AR Path="/62BCC6FA" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/62BCC6FA" Ref="#PWR09"  Part="1" 
+AR Path="/61A1C19C/62BCC6FA" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/62BCC6FA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR09" H 6775 5850 50  0001 C CNN
+F 1 "GND" H 6780 5927 50  0000 C CNN
+F 2 "" H 6775 6100 60  0000 C CNN
+F 3 "" H 6775 6100 60  0000 C CNN
+	1    6775 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 6025 6775 6025
+Wire Wire Line
+	6775 6025 6775 6100
+Wire Wire Line
+	7150 6025 7275 6025
+Wire Wire Line
+	7275 6025 7275 6100
+Text Notes 7500 6400 2    39   ~ 0
+digital to analog GND bridge\n
+$Comp
+L Device:C C?
+U 1 1 62BF7ADE
+P 2525 1725
+AR Path="/62BF7ADE" Ref="C?"  Part="1" 
+AR Path="/61B68DB5/62BF7ADE" Ref="C?"  Part="1" 
+AR Path="/6199674E/62BF7ADE" Ref="C7"  Part="1" 
+F 0 "C7" H 2625 1675 50  0000 L CNN
+F 1 "4.7uF" H 2525 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2563 1575 50  0001 C CNN
+F 3 "~" H 2525 1725 50  0001 C CNN
+F 4 "1mohm" H 2650 1525 50  0000 C CNN "Description"
+F 5 " C1608X5R1V475KT000E" H 2525 1725 50  0001 C CNN "MFR"
+F 6 "LCSC" H 2525 1725 50  0001 C CNN "Vendor"
+	1    2525 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62BFFAC1
+P 2325 3125
+AR Path="/62BFFAC1" Ref="R?"  Part="1" 
+AR Path="/6199674E/62BFFAC1" Ref="R8"  Part="1" 
+AR Path="/61A1C19C/62BFFAC1" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/62BFFAC1" Ref="R?"  Part="1" 
+F 0 "R8" H 2225 3150 50  0000 C CNN
+F 1 "150" H 2425 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2365 3115 50  0001 C CNN
+F 3 "~" H 2325 3125 50  0001 C CNN
+F 4 "RTT022152FTH" H 2325 3125 50  0001 C CNN "MFR"
+F 5 "LCSC" H 2325 3125 50  0001 C CNN "Vendor"
+	1    2325 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62C07B5A
+P 9425 1275
+AR Path="/62C07B5A" Ref="C?"  Part="1" 
+AR Path="/6199674E/62C07B5A" Ref="C12"  Part="1" 
+AR Path="/61A1C19C/62C07B5A" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/62C07B5A" Ref="C?"  Part="1" 
+F 0 "C12" H 9517 1321 50  0000 L CNN
+F 1 "4.7uF" H 9517 1230 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9425 1275 50  0001 C CNN
+F 3 "~" H 9425 1275 50  0001 C CNN
+F 4 "CL10A475KQ8NNNC" H 9425 1275 50  0001 C CNN "MFR"
+F 5 "LCSC" H 9425 1275 50  0001 C CNN "Vendor"
+	1    9425 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62C158F7
+P 10325 1300
+AR Path="/62C158F7" Ref="C?"  Part="1" 
+AR Path="/6199674E/62C158F7" Ref="C14"  Part="1" 
+AR Path="/61A1C19C/62C158F7" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/62C158F7" Ref="C?"  Part="1" 
+F 0 "C14" H 10417 1346 50  0000 L CNN
+F 1 "100nF" H 10417 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10325 1300 50  0001 C CNN
+F 3 "~" H 10325 1300 50  0001 C CNN
+F 4 "CC0402KRX5R5BB104" H 10325 1300 50  0001 C CNN "MFR"
+F 5 "LCSC" H 10325 1300 50  0001 C CNN "Vendor"
+	1    10325 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62C1A5E1
+P 5750 1150
+AR Path="/62C1A5E1" Ref="C?"  Part="1" 
+AR Path="/6199674E/62C1A5E1" Ref="C10"  Part="1" 
+AR Path="/61A1C19C/62C1A5E1" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/62C1A5E1" Ref="C?"  Part="1" 
+F 0 "C10" H 5842 1196 50  0000 L CNN
+F 1 "100nF" H 5842 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5750 1150 50  0001 C CNN
+F 3 "~" H 5750 1150 50  0001 C CNN
+F 4 "CC0402KRX5R5BB104" H 5750 1150 50  0001 C CNN "MFR"
+F 5 "LCSC" H 5750 1150 50  0001 C CNN "Vendor"
+	1    5750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62C1F942
+P 9825 1300
+AR Path="/62C1F942" Ref="C?"  Part="1" 
+AR Path="/6199674E/62C1F942" Ref="C13"  Part="1" 
+AR Path="/61A1C19C/62C1F942" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/62C1F942" Ref="C?"  Part="1" 
+F 0 "C13" H 9917 1346 50  0000 L CNN
+F 1 "100nF" H 9917 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9825 1300 50  0001 C CNN
+F 3 "~" H 9825 1300 50  0001 C CNN
+F 4 "CC0402KRX5R5BB104" H 9825 1300 50  0001 C CNN "MFR"
+F 5 "LCSC" H 9825 1300 50  0001 C CNN "Vendor"
+	1    9825 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 62C2733B
+P 9125 4650
+AR Path="/62C2733B" Ref="C?"  Part="1" 
+AR Path="/6199674E/62C2733B" Ref="C11"  Part="1" 
+AR Path="/61A1C19C/62C2733B" Ref="C?"  Part="1" 
+AR Path="/61A1DC85/62C2733B" Ref="C?"  Part="1" 
+F 0 "C11" H 9217 4696 50  0000 L CNN
+F 1 "100nF" H 9217 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9125 4650 50  0001 C CNN
+F 3 "~" H 9125 4650 50  0001 C CNN
+F 4 "CC0402KRX5R5BB104" H 9125 4650 50  0001 C CNN "MFR"
+F 5 "LCSC" H 9125 4650 50  0001 C CNN "Vendor"
+	1    9125 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C2D34A
+P 7000 6025
+AR Path="/62C2D34A" Ref="R?"  Part="1" 
+AR Path="/6199674E/62C2D34A" Ref="R42"  Part="1" 
+AR Path="/61A1C19C/62C2D34A" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/62C2D34A" Ref="R?"  Part="1" 
+F 0 "R42" V 6950 6175 50  0000 C CNN
+F 1 "0Ohm" V 6950 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7040 6015 50  0001 C CNN
+F 3 "~" H 7000 6025 50  0001 C CNN
+F 4 "1206W4J0000T5E" V 7000 6025 50  0001 C CNN "MFR"
+F 5 "LCSC" V 7000 6025 50  0001 C CNN "Vendor"
+	1    7000 6025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9125 4500 9675 4500
+Text GLabel 9675 4500 2    39   Input ~ 0
+temp
+$Comp
+L Device:R_US R?
+U 1 1 619B6431
+P 9025 2750
+AR Path="/619B6431" Ref="R?"  Part="1" 
+AR Path="/6199674E/619B6431" Ref="R10"  Part="1" 
+AR Path="/61A1C19C/619B6431" Ref="R?"  Part="1" 
+AR Path="/61A1DC85/619B6431" Ref="R?"  Part="1" 
+F 0 "R10" V 8975 2925 50  0000 C CNN
+F 1 "47K" V 8975 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9065 2740 50  0001 C CNN
+F 3 "~" H 9025 2750 50  0001 C CNN
+F 4 "RC0402FR-0747KL" V 9025 2750 50  0001 C CNN "MFR"
+F 5 "LCSC" V 9025 2750 50  0001 C CNN "Vendor"
+	1    9025 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 61A4F5B9
+P 4900 2650
+F 0 "J3" H 5008 2931 50  0000 C CNN
+F 1 "UART_SERIAL_CONN" H 4875 2875 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4900 2650 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2650 6075 2650
+Wire Wire Line
+	5100 2750 6075 2750
+Wire Wire Line
+	5100 2850 5300 2850
+Wire Wire Line
+	5300 2850 5300 2900
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 61A58D2D
+P 5300 2900
+AR Path="/61A58D2D" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/61A58D2D" Ref="#PWR08"  Part="1" 
+AR Path="/61A1C19C/61A58D2D" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/61A58D2D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR08" H 5300 2650 50  0001 C CNN
+F 1 "GND" H 5305 2727 50  0000 C CNN
+F 2 "" H 5300 2900 60  0000 C CNN
+F 3 "" H 5300 2900 60  0000 C CNN
+	1    5300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L The_Qi_wireless_charger_tx-rescue:+3.3V-OLIMEX_Power #PWR?
+U 1 1 61A5BEFB
+P 5375 2475
+AR Path="/61A5BEFB" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/61A5BEFB" Ref="#PWR011"  Part="1" 
+AR Path="/61A1C19C/61A5BEFB" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/61A5BEFB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR011" H 5375 2325 50  0001 C CNN
+F 1 "+3.3V" H 5390 2648 50  0000 C CNN
+F 2 "" H 5375 2475 60  0000 C CNN
+F 3 "" H 5375 2475 60  0000 C CNN
+	1    5375 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 2475 5375 2550
+Wire Wire Line
+	5375 2550 5100 2550
+NoConn ~ 8150 4650
+$Comp
+L The_Qi_wireless_charger_tx-rescue:GND-OLIMEX_Power #PWR?
+U 1 1 61C3EA68
+P 6925 5250
+AR Path="/61C3EA68" Ref="#PWR?"  Part="1" 
+AR Path="/6199674E/61C3EA68" Ref="#PWR?"  Part="1" 
+AR Path="/61A1C19C/61C3EA68" Ref="#PWR?"  Part="1" 
+AR Path="/61A1DC85/61C3EA68" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6925 5000 50  0001 C CNN
+F 1 "GND" H 6930 5077 50  0000 C CNN
+F 2 "" H 6925 5250 60  0000 C CNN
+F 3 "" H 6925 5250 60  0000 C CNN
+	1    6925 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 5150 6925 5250
+$EndSCHEMATC
